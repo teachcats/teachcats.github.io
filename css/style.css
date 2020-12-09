@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: indigo;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    padding-left: 50px;
+    background-color: rgba(255, 251, 0, 0.5);
+}
+
+body {
+    background-color: rgb(2, 40, 255);
+}
+
+figure {
+    opacity: 50%;
+}
+
+.topvid {
+    margin: 0 auto;
+    display: block;
+}
