@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Function Lesson</title>
+</head>
+<body>
+    <h1>Today we will learn about functions</h1>
+    <p>Where have you heard the word fuction?</p>
+    <p>functions of something; if I can touch a screen of
+        a laptop that is a function</p>
+    <p>If something functions correctly, then it works correctly</p>
+    <p>Functions are the opposite of malfunctions</p>
+    <p>Functions do something</p>
+    <p>Skill of a machine</p>
+    <p>Paper Shreder: you put the paper on the correct positiojn
+    you have to push a shredder and it cuts in a line, better
+    than cutting it with a scissor, cuts more straight. </p>
+    <p>Its a machine where you put solid paper in and get
+    little pieces out. It distorts important information.And then
+    Throws it out</p>
+    <p>We don't need to know how to make one, we just need to know 
+    how to use it.</p>
+    <form>
+        <input type="text" id="userValue">
+    </form>
+    <button onclick="cakeMachine()">Make Cake</button>
+    <button onclick="resetCake()">Reset</button>
+    <h1 id="cakeFinish">This is the cake that came out of the Machine</h1>
+    <script>
+        var numberOfCakes = 1;
+        numberOfCakes = document.getElementById("userValue").value;
+        function cakeMachine () {
+            var ingredients = `Ingredients: ${numberOfCakes} cup flour, ${numberOfCakes} eggs,  ${numberOfCakes} cup spice, ${numberOfCakes} cup sugar, ${numberOfCakes} tablespoon of coco.`
+            var ovenTemperature = "Temperature " + 350 + " degrees.";
+            var timeInOven = " Time in oven: 35 minutes.";
+            var cakeRecipe = ingredients + ovenTemperature + timeInOven;
+            document.getElementById("cakeFinish").innerHTML = cakeRecipe;
+        }
+        function resetCake (){
+            document.getElementById("cakeFinish").innerHTML = "This is the cake that came out of the Machine";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 50px;
+    margin-left: 1px;
+    width: 100%;
+}
+
+a {
+    color: white;
+    background-color: pink;
+    padding: 2px;
+    margin: 2px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: yellow;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#olink {
+    color: rgb(0, 0, 255);/* r stands for Red, g for Green, b for Blue. 0 to 255 and zero is the darkest. 255 is the brightest.*/
+    color: #0000ff;/* hex color, six numbers. 0 is the darkets, f is the brightest. 0 to 9 and then from a to f. first 2 color are red. */
+    /*0123456789abcdef a = 11, b = 12, c = 13, d = 14, e = 15, f = 16 - base 16
+    */
+    color: rgba(255, 0, 0, 1)/*a stands for alpha - transparency channel 0 to 1 */
+}
+
+ol {
+    color: pink;
+}
+
+/*period represents class, # represents id */
+.top-nav-links {
+    color: white;
+    background-color: blue;
+    padding: 4px;
+    margin: 2px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: yellow;
+    border-radius: 0px;
+    text-decoration: dashed;
+}
+/*hover is a sudo element, hover is a state of a link. */
+.top-nav-links:hover {
+    background-color: darkred;
+}
+
+#firstnav {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+}
+
+/*
+max-width means width < 900px
+min-width means width > 900px
+ what does media stand for 
+the main means of mass communication (broadcasting, publishing, and the Internet) regarded collectively.
+plural of medium
+medium can be paint, paper, tv screen, radio
+
+Screen is an object that we can view technological content
+Screen is a thing that has colored pixels and displays
+min-width means minimum width
+max-width means maximum width*/
